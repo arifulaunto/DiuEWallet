@@ -1,0 +1,13 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.text-center {
+  padding: 50px;
+}
+.loginArea {
+  padding: 50px;
+  margin: 40px;
+  border-radius: 7px;
+  box-shadow: 7px 7px 10px green;
+}
