@@ -11,3 +11,24 @@ body {
   border-radius: 7px;
   box-shadow: 7px 7px 10px green;
 }
+
+/* transaction Part */
+
+#transaction-area {
+  display: none;
+}
+.status {
+  margin: 150px 20px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.cashIn {
+  background-color: sandybrown;
+}
+.withdraw {
+  background-color: springgreen;
+}
+.balance {
+  background-color: steelblue;
+}

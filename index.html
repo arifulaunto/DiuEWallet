@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="loginPage">
       <h1 class="text-center">Welcome To Diu Smart E Wallet</h1>
       <div class="loginArea">
         <h4 class>login Form</h4>
@@ -37,11 +37,64 @@
       </div>
     </div>
 
+    <!-- transaction page start  -->
+    <div id="transaction-area">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="cashIn status">
+            <h4>Cash In</h4>
+            <h2>$00</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdraw status">
+            <h4>Withdraw</h4>
+            <h2>$00</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="balance status">
+            <h4>Net Balance</h4>
+            <h2>$00</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="loginArea">
+            <h4>Cash In</h4>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Cash In deposit"
+            />
+            <br />
+            <button class="btn btn-success">Cash In</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="loginArea">
+            <h4>Withdraw</h4>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Your Withdraw Amount"
+            />
+            <br />
+            <button class="btn btn-success">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- javascriptCode -->
     <script>
       const loginBtn = document.getElementById("loginId");
       loginBtn.addEventListener("click", function () {
-        console.log("Login Processing");
+        const loginPart = document.getElementById("loginPage");
+        loginPart.style.display = "none";
+        const transactionArea = document.getElementById("transaction-area");
+        transactionArea.style.display = "block";
       });
     </script>
   </body>
